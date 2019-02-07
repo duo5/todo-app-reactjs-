@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "staging": "list-student",
+    "default": "list-student",
+    "alias": "student-40992"
+  }
+}

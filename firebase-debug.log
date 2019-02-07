@@ -1,0 +1,152 @@
+[debug] [2019-02-06T14:31:51.261Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T14:31:51.263Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2019-02-06T14:31:51.263Z] CLI Version:   6.3.1
+[debug] [2019-02-06T14:31:51.263Z] Platform:      linux
+[debug] [2019-02-06T14:31:51.263Z] Node Version:  v11.9.0
+[debug] [2019-02-06T14:31:51.263Z] Time:          Wed Feb 06 2019 21:31:51 GMT+0700 (Indochina Time)
+[debug] [2019-02-06T14:31:51.263Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T14:31:51.270Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T14:31:51.270Z] > authorizing via signed-in user
+[debug] [2019-02-06T14:31:51.271Z] [iam] checking project student-40992 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T14:31:51.272Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/student-40992:testIamPermissions  
+
+[debug] [2019-02-06T14:31:52.450Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T14:31:52.455Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/student-40992  
+ 
+[debug] [2019-02-06T14:31:53.261Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'student-40992'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T14:31:53.270Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/student-40992/versions  
+
+[debug] [2019-02-06T14:31:54.694Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T14:31:54.694Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T14:31:54.845Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 14:31:54 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/student-40992/versions",
+        "path": "/v1beta1/sites/student-40992/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/student-40992/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T14:32:01.121Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T14:32:01.123Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2019-02-06T14:32:01.123Z] CLI Version:   6.3.1
+[debug] [2019-02-06T14:32:01.123Z] Platform:      linux
+[debug] [2019-02-06T14:32:01.123Z] Node Version:  v11.9.0
+[debug] [2019-02-06T14:32:01.123Z] Time:          Wed Feb 06 2019 21:32:01 GMT+0700 (Indochina Time)
+[debug] [2019-02-06T14:32:01.123Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T14:32:01.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T14:32:01.130Z] > authorizing via signed-in user
+[debug] [2019-02-06T14:32:01.130Z] [iam] checking project student-40992 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T14:32:01.132Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/student-40992:testIamPermissions  
+
+[debug] [2019-02-06T14:32:02.280Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T14:32:02.285Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/student-40992  
+ 
+[debug] [2019-02-06T14:32:03.091Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'student-40992'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T14:32:03.100Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/student-40992/versions  
+
+[debug] [2019-02-06T14:32:04.524Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T14:32:04.524Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T14:32:04.680Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 14:32:04 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/student-40992/versions",
+        "path": "/v1beta1/sites/student-40992/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/student-40992/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
