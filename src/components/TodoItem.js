@@ -3,13 +3,15 @@ import './TodoItem.css';
 
 class TodoItem extends Component {
 render(){
+    const {item,func} = this.props;
     let className = "";
     if(this.props.item.isDone){
         className += "TodoItem-complete";
     }
     return (
-        <div className={className} >
-            <p>{this.props.item.title}</p>
+        
+        <div className={className} onClick={func} >
+            <p>{item.title}</p>
         </div>
     );
 }

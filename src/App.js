@@ -8,11 +8,30 @@ import TodoItem from './components/TodoItem';
 class App extends Component {
   constructor(){
     super();
-    this.todoItem = [
-      {title:"play game",isDone:true},
-      {title:"sing a song",isDone:true},
-      {title:"play football",isDone:true}
-    ];
+    this.state={todoItem : [
+      {title:"play game",isDone:false},
+      {title:"sing a song",isDone:false},
+      {title:"play football",isDone:false}
+    
+    ]};
+  }
+
+  handleClick(item){
+    return (event) => {
+      const isDone  = item.isDone;
+      const {todoItem} = this.state;
+      const index =   todoItem.indexOf(item);
+      this.setState({
+        todoItem:[
+          ...todoItem.slice(0,index),
+          {
+            ...item,
+            isDone:!isDone
+          },
+          ...todoItem.slice(index+1)
+        ]
+      });
+    }
   }
 
   render() {
@@ -20,8 +39,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          {this.todoItem.length>0 && this.todoItem.map((item,index) => <TodoItem key={index} item={item} />)};
-          {this.todoItem.length===0 && 'Nothing'};
+          {this.state.todoItem.length>0 && this.state.todoItem.map((item,index) => <TodoItem key={index} item={item} func={this.handleClick(item)} />)}
+          {this.state.todoItem.length===0 && 'Nothing'}
         </header>
       </div>
     );
